@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 20%;
+  background-color: #8BC6EC;
+  display: flex;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-radius: 8px;
+}
+
+hr{
+border: none;
+border-top: 2px solid red;
+}
+
+
+
+header h1{
+font-size: 25px;
+text-align: center;
+}
+
+
+header img{
+    width: 125px;
+    height: 125px;
+    transition-duration: 800ms;
+    border: 2px solid black;
+    border-radius:50%;
+}
+
+header img:hover{
+    width: 200px;
+    height:300px ;
+    border-radius: 100px;
+
+}
+
+
+
+.resumen{
+    
+    
+    border-radius: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+}
+
+
+.nombre{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+
+main{
+    width: 100%;
+    background-color: #b2d3dd;
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.contacto img{
+    background-color: blue;
+    opacity: 0.5; /* Opacidad del 50% */
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+
+}
+
+.izquierda{
+width: 20%;
+line-height: 200%;
+list-style-position: inside;
+}
+
+.derecha{
+width: 50%;
+line-height: 200%;
+text-align: justify;
+list-style-position: inside;
+}
+
+                                    /*VIEWPORT*/
+/*diseño responsivo para adaptar nuestra pagina web a cualquier tipo de pantallas celular tablet laptop desktop*/
+
+/*vista desde el telefono*/
+
+@media only screen
+and (min-device-width: 320px) 
+and (max-device-width: 480px){
+
+header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 25%;
+}
+
+
+main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 25%;
+}
+
+.izquierda{
+    width: 50%;
+
+}
+}
+
+/* Vista de tablet */
+
+@media only screen 
+and (min-device-width: 680px)
+and (max-device-width: 1000px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 25%;
+    }
+    
+    
+    main{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 90%;
+        height: 25%;
+    }
+    
+    .izquierda{
+        width: 60%;
+        
+    }
+}
+
+/* Vista laptop */
+
+@media only screen 
+and (min-device-width: 1024px)
+and (max-device-width: 1400px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 25%;
+    }
+    
+}
